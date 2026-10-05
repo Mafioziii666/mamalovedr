@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ҡәҙерле әсәйебеҙ! 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Плавающие лепестки/шарики -->
+    <div class="petals" id="petals"></div>
+
+    <!-- КОНФЕТТИ при клике -->
+    <div class="confetti-layer" id="confettiLayer"></div>
+
+    <!-- Секция приветствия -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-date">6 октябрь</div>
+            <h1 class="hero-title"><br>Тыуған көнөң менән</h1>
+            <p class="hero-sub">Иң ҡәҙерле әсәйгә 💛</p>
+            <button class="start-btn" id="startBtn">
+                <span>🎁 Карточканы асыу 🎁</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Основная открытка -->
+    <main class="card" id="card">
+
+        <!-- Фото мамы -->
+        <section class="photo-section">
+            <div class="crown">👑</div>
+            <div class="photo-frame">
+                <img src="img/асай.jpg" alt="Мама" class="mom-photo">
+            </div>
+            <h2 class="mom-name">Ҡәҙерле әсәйебеҙ!</h2>
+            <p class="mom-age">Бөгөн һинең көнөң ✨</p>
+        </section>
+
+        <!-- Поздравление -->
+        <section class="wish-section">
+            <p class="wish-text">
+                Сегодня, <span class="date-highlight">6 октября</span>,
+                самый тёплый и важный день в году — день, когда появилась ты. День, который подарил миру человека с огромным сердцем. В этот день хочется говорить бесконечно, потому что слов благодарности накопилось так много, что они не помещаются в одно короткое «спасибо».
+
+                <br>Как же это всё было? Ты отучилась, встала на ноги, выстроила свою лучшую жизнь и показала ей свой сильный характер. Встретила любовь, а с ней у вас появились четыре смысла жизни. Ты переживала потери, боль, страх и одиночество, но каждый раз находила в себе силы не сломаться, а стать ещё сильнее. Ты — очень старательная, умеешь быть смелой, когда страшно, и стойкой, когда тяжело. Твои дети выросли, глядя на тебя, и ты точно знаешь, что можешь гордиться каждым.
+
+                <br>Дорогая мама, спасибо тебе за каждую бессонную ночь, когда ты сидела у нашей кровати и успокаивала своим нежным пением, за каждое тёплое слово, сказанное вовремя, за твою бесконечную любовь, которая согревает нас всю жизнь. Ты — наш самый близкий человек, наша поддержка, наш дом. Тот дом, куда хочется возвращаться, где всегда пахнет чем-то вкусным и где нас ждут с открытым сердцем.
+
+                <br>Сегодня тебе исполняется 44. Это возраст, в котором ты по-прежнему молода, красива и полна сил — но за плечами уже столько мудрости и любви, что хватит на целую жизнь. Мы хотим, чтобы этот год принёс тебе столько счастья, сколько ты подарила нам. Чтобы твои глаза светились от радости, чтобы здоровье не подводило, чтобы каждый день был наполнен заботой, вниманием и теплом. 
+                <br>Ты заслуживаешь всего самого лучшего — и даже большего.
+
+                <br>Беҙ һине шул тиклем яратабыҙ. Тыуған көнөң менән, әсәй! 🎂💛
+            </p>
+            <p class="wish-text">
+                Һин беҙгә иң яҡын кеше — терәк һәм өйөбөҙ.
+            </p>
+            <p class="wish-text highlight">
+                Тыуған көнөң менән, әсәй! 🎂💛
+            </p>
+        </section>
+
+        <!-- Счётчик / дата -->
+        <section class="birthday-badge">
+            <div class="badge-inner">
+                <span class="badge-day">44</span>
+                <span class="badge-month">йыл</span>
+                <span class="badge-note">һинең көнөң</span>
+            </div>
+        </section>
+
+        <!-- Пожелания -->
+        <h2 class="section-title">Иң изге теләктәребеҙҙе теләйбеҙ💫</h2>
+        <section class="wishes-grid">
+            <div class="wish-card">
+                <div class="wish-icon">💛</div>
+                <h3>Һаулыҡ</h3>
+                <p>Ҡасан да булһа көслөрәк</p>
+            </div>
+            <div class="wish-card">
+                <div class="wish-icon">💛</div>
+                <h3>Бәхет</h3>
+                <p>Һәр яңы көндә</p>
+            </div>
+            <div class="wish-card">
+                <div class="wish-icon">💛</div>
+                <h3>Мөхәббәт</h3>
+                <p>Йылы һәм сикһеҙ</p>
+            </div>
+            <div class="wish-card">
+                <div class="wish-icon">💛</div>
+                <h3>Күңел тыныслығы</h3>
+                <p>Һәм тыныс кистәр</p>
+            </div>
+            <div class="wish-card">
+                <div class="wish-icon">💛</div>
+                <h3>Илһам</h3>
+                <p>Нимә теләйһең, шуның өсөн</p>
+            </div>
+            <div class="wish-card">
+                <div class="wish-icon">💛</div>
+                <h3>Ҡыуаныстар</h3>
+                <p>Көн һайын!</p>
+            </div>
+            <div class="wish-card">
+                <div class="wish-icon">💛</div>
+                <h3>Именлек</h3>
+                <p>Һиңә һәм барлыҡ яҡындарыңа</p>
+            </div>
+            <div class="wish-card">
+                <div class="wish-icon">💛</div>
+                <h3>Короче говоря</h3>
+                <p>Всего самого наилучшего!</p>
+            </div>
+        </section>
+
+        <!-- Фото с семьёй -->
+        <section class="family-section">
+            <h2 class="section-title">Һин беҙҙең иң ҡәҙерле кешебеҙ💫</h2>
+            <div class="family-gallery">
+                <div class="family-photo"><img src="img/семья1.jpg" alt="Семья 1"></div>
+                <div class="family-photo"><img src="img/семья2.jpg" alt="Семья 2"></div>
+                <div class="family-photo"><img src="img/семья3.jpg" alt="Семья 3"></div>
+                <div class="family-photo"><img src="img/семья4.jpg" alt="Семья 4"></div>
+                <div class="family-photo"><img src="img/семья5.jpg" alt="Семья 5"></div>
+                <div class="family-photo"><img src="img/семья6.jpg" alt="Семья 6"></div>
+                <div class="family-photo"><img src="img/семья7.jpg" alt="Семья 7"></div>
+                <div class="family-photo"><img src="img/семья8.jpg" alt="Семья 8"></div>
+                <div class="family-photo"><img src="img/семья9.jpg" alt="Семья 9"></div>
+            </div>
+        </section>
+
+        <!-- Финальное поздравление -->
+        <section class="final-wish">
+            <img src="img/торт.webp" alt="тортик">
+            <p class="final-text">
+                Әсәй, бәхетле бул!<br>
+                Беҙ һине шул тиклем яратабыҙ 💛
+            </p>
+            <button class="hug-btn" id="hugBtn">Беҙ һине ҡосаҡлайбыҙ!</button>
+        </section>
+
+        <footer class="footer">
+            <p>Мөхәббәт менән, ғаиләң — бәхетле бул</p>
+        </footer>
+
+    </main>
+
+    <!-- Управление музыкой -->
+    <button class="music-btn" id="musicBtn" title="Включить/выключить музыку">
+        <span id="musicIcon">🔇</span>
+    </button>
+
+    <audio id="bgMusic" loop>
+        <source src="audio/deti-online.com-mama-bud-vsegda-so-mnoyu-ryadom-1791204963482-reqfx-compressed.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
